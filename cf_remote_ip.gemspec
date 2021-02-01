@@ -10,11 +10,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Allyson Maciel Guimarães']
   spec.email         = ['bsinet@hotmail.com']
 
-  spec.summary       = 'Write a short summary, because RubyGems requires one.'
-  spec.description   = 'Write a longer description or delete this line.'
+  spec.summary       = "Gem that facilitates the recovery of the client's real ip through Cloudflare."
+  spec.description   = "Gem that facilitates the recovery of the client's real ip through the conventional subscription of the request class."
   spec.homepage      = "https://github.com/Guepardo/cf_remote_ip"
-
-  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = "https://github.com/Guepardo/cf_remote_ip"
@@ -34,5 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'pry', '~> 0.13.1'
 end
