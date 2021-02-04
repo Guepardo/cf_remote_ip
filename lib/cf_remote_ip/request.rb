@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 module ActionPack
   module Cloudflare
     module Request
-
       def remote_ip
         find_remote_ip || super
       end
@@ -9,9 +10,9 @@ module ActionPack
       private
 
       def find_remote_ip
-        @env['HTTP_CF_CONNECTING_IP'] ||
         @env['HTTP_TRUE-CLIENT-IP'] ||
-        find_from_forwarded_for
+          @env['HTTP_CF_CONNECTING_IP'] ||
+          find_from_forwarded_for
       end
 
       def find_from_forwarded_for
